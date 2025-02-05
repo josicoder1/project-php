@@ -1,0 +1,119 @@
+/* Body Setup */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 0;
+    height: 100vh;
+    /* Ensure body takes full height */
+    display: flex;
+    /* Flexbox to center the content */
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+    position: relative;
+    /* Needed for overlay */
+    background: url('images-3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Full Screen Black Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* Black transparent overlay */
+    z-index: 1;
+    /* Put overlay behind text */
+}
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Section Setup */
+.about-us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    /* Content stays above overlay */
+    transition: transform 0.3s ease-in-out;
+    /* Animation effect */
+    width: 100%;
+    /* Ensure full width */
+}
+
+/* Section Hover Animation */
+.about-us:hover {
+    transform: translateY(-20px);
+    /* Moves the section upwards */
+}
+
+/* Container Centering */
+.about-us .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    max-width: 900px;
+}
+
+/* Header Styling */
+h2 {
+    /* font-family: 'Clicker Script', cursive; */
+    font-size: 3rem;
+    /* Larger font size */
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    max-width: 800px;
+    /* Optional: Limit width for readability */
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.btn {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Added transition for transform */
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #151515;
+    /* Darker green on hover */
+    transform: scale(1.1);
+    color: white;
+    /* Slightly enlarge the button when hovered */
+}
