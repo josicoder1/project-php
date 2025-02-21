@@ -119,17 +119,14 @@ button:hover {
 header {
     background-color: white;
     padding: 20px;
-<<<<<<< HEAD
 }
-=======
-}
-=======
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
+
+ {
+    margin:0;
+    padding:0;
     /* box-sizing: border-box; */
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -150,8 +147,6 @@ body {
     
 }
 
-
-/* Navigation Bar */
 #main_nav {
     background: black;
     padding: 10px 20px;
@@ -189,7 +184,6 @@ body {
     height: 90px;
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -222,7 +216,6 @@ body {
 }
 
 
-/* Note Section */
 .note {
     margin-top: 200px;
     padding: 20px;
@@ -244,7 +237,7 @@ body {
     line-height: 1.8;
 }
 
-/* Media Query for Small-Sized Screens */
+
 @media (max-width: 640px) {
     .container1 {
         
@@ -364,4 +357,3 @@ body {
     vertical-align: top;
 }
 
->>>>>>> 9316b7ac6039d40f23208e557e5e9a9cc08135ad
