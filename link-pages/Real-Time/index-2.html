@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <main>
+        <section class="vehicle-status">
+            <h2>Real-Time Vehicle Availability</h2>
+            <div class="status-grid" id="vehicle-list">
+                <!-- PHP will populate these -->
+                <div class="vehicle-card available">
+                    <h3>Vehicle #001</h3>
+                    <p>Status: Available</p>
+                    <p>Location: Garage A</p>
+                </div>
+                <!-- Add more vehicle cards -->
+            </div>
+        </section>
+        <section class="allocation-controls">
+            <h2>Vehicle Allocation</h2>
+            <form id="allocation-form">
+                <div class="form-group">
+                    <label>Vehicle Type</label>
+                    <select id="vehicle-type">
+                        <option value="van">Van</option>
+                        <option value="truck">Truck</option>
+                        <option value="car">Car</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Priority Level</label>
+                    <select id="priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <button type="submit">Allocate Vehicle</button>
+            </form>
+        </section>
+        </main>
+        <aside class="notifications">
+            <h2>Notifications</h2>
+            <ul class="notification-list" id="notifications">
+                <!-- php will populate these -->
+                 <li class="notification-item">
+                    vehicle # 002 assigned to Priority Delivery (High)
+                 </li>
+                 <!-- Add more notification -->
+            </ul>
+
+        </aside>
+    </div>
+</body>
+</html>
