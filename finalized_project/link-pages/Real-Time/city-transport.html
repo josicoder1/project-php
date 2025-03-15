@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Transport</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 20px;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: flex-start;
+            text-align: left;
+            width: 100%;
+            flex-direction: row-reverse;
+        }
+
+        .content img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+
+        .content p {
+            max-width: 50%;
+            text-align: justify;
+            font-size: 1.1em;
+            background-color: #d6eff9;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .content p:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.02);
+        }
+         /* Footer style */
+.footer-wrapper{
+    background-color: #d6eff9;
+    color: #1d1d1f;
+    font-size: .65em;
+    padding-left: 20px;
+}
+
+.footer-links-wrapper{
+    font-size: 1.5em;
+    display: flex;
+    -webkit-box-pack: justify;
+    gap: 80px;
+    padding-top: 20px;
+}
+.footer-wrapper ul{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.footer-wrapper ul li{
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+.footer-links-wrapper a{
+    color: #515154;
+    text-decoration: none;
+}
+.footer-links-wrapper a:hover{
+    text-decoration: underline;
+}
+.footer-links-wrapper h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+.map img {
+    display: block;
+    margin-left: auto; /* Align to right */
+    width: 700px; /* Adjust width as needed */
+    height: 400px; /* Reduce height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+.my-apple-wrapper{
+    border: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.copyright-wrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+}
+.footer-binks-terms ul li{
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+.footer-binks-terms ul li:last-child{
+    border-right: 0;
+}
+.footer-binks-terms ul li a{
+    text-decoration: none;
+    color: #515154;
+}
+.footer-binks-terms ul li a:hover{
+    text-decoration: underline;
+}
+.footer-country{
+    display: inline-block;
+}
+.flag-wrapper {
+    /* position: fixed; */
+    bottom: 10px;
+    right: 10px;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+.flag-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../../logo.png" alt="yegna logo" width="292" height="174">
+    </header>
+    <main>
+        <h1>City Transport</h1>
+        <div class="content">
+
+            <img src="../../image.png" alt="City Transport" width="600" height="400">
+            <p>As it is well known, the population tends to be significantly larger in urban areas compared to rural regions. In urban settings, transportation becomes an essential part of daily life, as moving from one place to another often requires modern modes of transport. Unlike rural areas, where it may still be feasible to travel using horses or other transport animals due to the open spaces and natural landscapes, urban environments are not conducive to such traditional methods of travel. Cities are characterized by their dense population, with people living and working in close proximity. Additionally, urban areas have a well-established infrastructure where buildings, facilities, and services are geographically closer to one another. However, this dense population and compact infrastructure create a heightened demand for efficient and reliable city transportation systems to ensure smooth movement across various parts of the city.</p>
+        </div>
+    </main>
+    <footer class="footer-wrapper"> 
+        <div class="internal-wrapper">
+            
+            <div class="footer-links-wrapper">
+                <div class="link-wrapper-1">
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="#pro">Service Types</a></li>
+                    </ul>
+
+                </div>
+                <div class="link-wrapper-2">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tell:+251906504853">Phone</a></li>
+                        <li><a href="mailto:jsphtadesse@gmail.com">Email</a></li>
+                        <li><a href="#">Kality Kafdem 1st floor</a></li>
+                    </ul>
+                
+                </div>
+                <div class="map">
+                    <img src="../../map.png" alt="map">
+                </div>
+                
+                
+            </div>
+            <div class="my-apple-wrapper">
+                We are 24 hour online
+            </div>
+            <div class="copyright-wrapper">
+                <div class="copyright">
+                    Copyright @ 2019 HAGERE.All right reserved.
+                </div>
+                <div class="footer-links-terms">
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-country">
+                    <div class="flag-wrapper">
+                        <div class="footer-country-name"><img src="../../logo.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

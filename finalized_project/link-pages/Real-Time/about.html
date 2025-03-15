@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Transport Request</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="../../css/style-2.css">
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 0;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Image Container (Left Side) */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 706px;
+    border-radius: 8px;
+}
+
+/* About Content (Right Side) */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+}
+
+/* About Items */
+.about-item {
+    margin-bottom: 20px;
+    
+}
+
+.about-item-inner {
+    background: #d6eff9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Flexbox Alignment */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .image-container {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        order: 2;
+        text-align: center;
+    }
+}
+/* Footer style */
+.footer-wrapper{
+    background-color: #d6eff9;
+    color: #1d1d1f;
+    font-size: .65em;
+    padding-left: 20px;
+}
+
+.footer-links-wrapper{
+    font-size: 1.5em;
+    display: flex;
+    -webkit-box-pack: justify;
+    gap: 80px;
+    padding-top: 20px;
+}
+.footer-wrapper ul{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.footer-wrapper ul li{
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+.footer-links-wrapper a{
+    color: #515154;
+    text-decoration: none;
+}
+.footer-links-wrapper a:hover{
+    text-decoration: underline;
+}
+.footer-links-wrapper h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+.map img {
+    display: block;
+    margin-left: auto; /* Align to right */
+    width: 700px; /* Adjust width as needed */
+    height: 400px; /* Reduce height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+.my-apple-wrapper{
+    border: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.copyright-wrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+}
+.footer-binks-terms ul li{
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+.footer-binks-terms ul li:last-child{
+    border-right: 0;
+}
+.footer-binks-terms ul li a{
+    text-decoration: none;
+    color: #515154;
+}
+.footer-binks-terms ul li a:hover{
+    text-decoration: underline;
+}
+.footer-country{
+    display: inline-block;
+}
+.flag-wrapper {
+    /* position: fixed; */
+    bottom: 10px;
+    right: 10px;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+.flag-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+</style>
+<body>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title col-12">
+                    <h2 style="text-align: center;">About Us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Left Side: Image -->
+                <div class="image-container col-md-6">
+                    <img src="../../image-5.webp" alt="Transport Service">
+                </div>
+
+                <!-- Right Side: About Content -->
+                <div class="col-md-6 about-content">
+                    <div class="row">
+                        <!-- Mission -->
+                        <div class="col-md-12 col-lg-6 about-item">
+                            <div class="about-item-inner">
+                                <h4>Mission</h4>
+                                <p>We provide safe, reliable, and fast transport request services, improving
+                                    accessibility and quality of life.</p>
+                            </div>
+                        </div>
+                        <!-- Vision -->
+                        <div class="col-md-12 col-lg-6 about-item">
+                            <div class="about-item-inner">
+                                <h4>Vision</h4>
+                                <p>To be a leading transport request platform, connecting users efficiently and ensuring
+                                    seamless mobility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- How It Works -->
+                    <div class="about-item about-full">
+                        <div class="about-item-inner">
+                            <h4>How It Works</h4>
+                            <p>Request transport with a few clicks. Our system connects you with available transport
+                                services instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-wrapper"> 
+        <div class="internal-wrapper">
+            
+            <div class="footer-links-wrapper">
+                <div class="link-wrapper-1">
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="#pro">Service Types</a></li>
+                    </ul>
+
+                </div>
+                <div class="link-wrapper-2">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tell:+251906504853">Phone</a></li>
+                        <li><a href="mailto:jsphtadesse@gmail.com">Email</a></li>
+                        <li><a href="#">Kality Kafdem 1st floor</a></li>
+                    </ul>
+                
+                </div>
+                <div class="map">
+                    <img src="../../map.png" alt="map">
+                </div>
+                
+                
+            </div>
+            <div class="my-apple-wrapper">
+                We are 24 hour online
+            </div>
+            <div class="copyright-wrapper">
+                <div class="copyright">
+                    Copyright @ 2019 HAGERE.All right reserved.
+                </div>
+                <div class="footer-links-terms">
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-country">
+                    <div class="flag-wrapper">
+                        <div class="footer-country-name"><img src="../../logo.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

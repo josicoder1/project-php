@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Enjoy your ride</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        main {
+            
+            padding: 20px;
+        }
+       
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-header h1 {
+            font-size: 32px;
+            color: #333;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between; /* Distribute space between boxes */
+            flex-wrap: nowrap; /* Prevent wrapping to ensure horizontal alignment */
+            gap: 20px; /* Space between boxes */
+            margin-bottom: 40px;
+            overflow-x: auto; /* Add horizontal scroll if content overflows */
+            padding-bottom: 10px; /* Add padding for scrollbar */
+        }
+        
+        .contact-box {
+            background-color: #d6eff9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1; /* Allow boxes to grow and fill available space */
+            min-width: 250px; /* Minimum width for each box */
+        }
+
+        .contact-box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .contact-box h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-box p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            background-color: #d6eff9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            width: 50%;
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        .map-container {
+            width: 45%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        /* Footer style */
+.footer-wrapper{
+    background-color: #d6eff9;
+    color: #1d1d1f;
+    font-size: .65em;
+    padding-left: 20px;
+}
+
+.footer-links-wrapper{
+    font-size: 1.5em;
+    display: flex;
+    -webkit-box-pack: justify;
+    gap: 80px;
+    padding-top: 20px;
+}
+.footer-wrapper ul{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.footer-wrapper ul li{
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+.footer-links-wrapper a{
+    color: #515154;
+    text-decoration: none;
+}
+.footer-links-wrapper a:hover{
+    text-decoration: underline;
+}
+.footer-links-wrapper h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+.map img {
+    display: block;
+    margin-left: auto; /* Align to right */
+    width: 700px; /* Adjust width as needed */
+    height: 400px; /* Reduce height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+.my-apple-wrapper{
+    border: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.copyright-wrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+}
+.footer-binks-terms ul li{
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+.footer-binks-terms ul li:last-child{
+    border-right: 0;
+}
+.footer-binks-terms ul li a{
+    text-decoration: none;
+    color: #515154;
+}
+.footer-binks-terms ul li a:hover{
+    text-decoration: underline;
+}
+.footer-country{
+    display: inline-block;
+}
+.flag-wrapper {
+    /* position: fixed; */
+    bottom: 10px;
+    right: 10px;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+.flag-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <div>
+            <section class="contact-header ">
+                <h1>Contact Us</h1>
+            </section>
+            <section class="contact-info contact-box">
+                <div class="contact-box">
+                    
+                    <h3>Address</h3>
+                    <i class="fas fa-map-marker-alt fa-3x"></i>
+                    <p>Kality , Kafidem, Addis Ababa, Ethiopia</p>
+                </div>
+                <div class="contact-box">
+                    <i class="fas fa-phone fa-3x"></i> 
+                    <h3>Phone Number</h3>
+                    <p>0906504853</p>
+                </div>
+                <div class="contact-box">
+                    <i class="fas fa-envelope fa-3x"></i>
+                    <h3>Email</h3>
+                    <p>jsphtadesse@gmail.com</p>
+                </div>
+            </section>
+        </div>
+        
+
+        <section class="contact-container">
+            <div class="contact-form">
+                <h2>Send us an Email</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="text" placeholder="Phone" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Text Content" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-wrapper"> 
+        <div class="internal-wrapper">
+            
+            <div class="footer-links-wrapper">
+                <div class="link-wrapper-1">
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="#pro">Service Types</a></li>
+                    </ul>
+
+                </div>
+                <div class="link-wrapper-2">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tell:+251906504853">Phone</a></li>
+                        <li><a href="mailto:jsphtadesse@gmail.com">Email</a></li>
+                        <li><a href="#">Kality Kafdem 1st floor</a></li>
+                    </ul>
+                
+                </div>
+                <div class="map">
+                    <img src="../../map.png" alt="map">
+                </div>
+                
+                
+            </div>
+            <div class="my-apple-wrapper">
+                We are 24 hour online
+            </div>
+            <div class="copyright-wrapper">
+                <div class="copyright">
+                    Copyright @ 2019 HAGERE.All right reserved.
+                </div>
+                <div class="footer-links-terms">
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-country">
+                    <div class="flag-wrapper">
+                        <div class="footer-country-name"><img src="../../logo.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Google Maps Integration
+        function initMap() {
+            var location = { lat: 9.03, lng: 38.74 }; // Coordinates for Addis Ababa
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
